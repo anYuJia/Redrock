@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L3</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+
+        }
+        .box1{
+            border: 1px black solid;
+            margin: 10px;
+            width:320px;
+            min-width: 320px;
+            height: 500px;
+        }
+        .box2{
+            border: 1px black solid;
+            margin: 10px;
+            width:320px;
+            height: 300px;
+            flex-grow: 1;
+        }
+        .box3{
+            border: 1px black solid;
+            align-self: start;
+            margin: 10px;
+            width:320px;
+            height: 100px;
+        }
+        .box4{
+            border: 1px black solid;
+            margin: 10px;
+            width:320px;
+            height: 600px;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        一号盒子
+        <p>我始终保持原大小，不缩放。</p>
+    </div>
+    <div class="box2">
+        二号盒子
+        <p>浏览器界面变宽时，我占满其他元素剩下的所有空间</p>
+    </div>
+    <div class="box3">
+        三号盒子
+        <p>我和四号盒子的顶部对齐</p>
+    </div>
+    <div class="box4">
+        四号盒子
+        <p>浏览器界面变窄时，我缩窄的速度要比二、三号盒子快</p>
+    </div>
+</body>
+</html>

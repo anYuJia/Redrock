@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L2</title>
+    <style>
+        html,body{
+            height: 100%;
+            font-family: fangsong;
+        }
+        html body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            height: 480px;
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.5s;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1)
+
+        }
+        #box:hover{
+            transform: scale(1.02);
+            transition-duration:0.5s;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4)
+        }
+        #box img{
+            height:200px;
+            width: 100%;
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+        #box img:hover{
+            transform: scale(1.08);
+            transition-duration:0.5s;
+            background-size: cover;
+        }
+        #box p{
+            color: darkgray;
+            font-size: 16px;
+        }
+        #box div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #box div button{
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            border: 0;
+            border-radius: 15px;
+            background: deepskyblue;
+            color: white;
+        }
+        #box div button:hover{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img src="img/a.png">
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;ypy个人空间</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;所有人都带着面具，但也别忘了温暖自己!</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;在现在这个复杂的社会中，我们面对着形形色色的人，这使得我们不得不在这社会中隐藏自己，我们每个人都戴着面具去面对别人，因为我们不知道对方是否能够让我们相信，但是我们也不能忘记温暖我们自己，我们也会遇见一个人，她会让我们摘下面具坦诚相待！</p>
+        <div>
+            <button>加入</button>
+        </div>
+    </div>
+</body>
+</html>

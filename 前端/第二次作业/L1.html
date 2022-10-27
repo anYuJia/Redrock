@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L1</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        html body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width: 500px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .box div {
+            width: 180px;
+            height: 50px;
+            background-color: grey;
+        }
+        .box a{
+            text-decoration: none;
+        }
+        .box p{
+            color: red;
+        }
+        .box div:hover{
+            background-color: yellow;
+        }
+        /* 趣味推理题 */
+        /* 已知让第一个li的字体大小变为20px的代码为：*/
+        .box ul li:nth-child(2){
+            font-size: 30px;
+        }
+        .box ul li:nth-child(1){
+            font-size: 20px;
+        }
+        .box ul li:nth-child(3){
+            font-size: 40px;
+        }
+        /* 请让第二个和第三个li元素完成它们想要的变换！提示：大家可以查一下:nth-child伪类选择器*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#">我不想要a标签默认的下划线</a>
+        <p>我的字体颜色是红色</p>
+        <div>鼠标悬停在我的上面时，我的背景颜色变成黄色</div>
+        <ul>
+            <li>我的字体大小是20px</li>
+            <li>我的字体大小是30px</li>
+            <li>我的字体大小是40px</li>
+        </ul>
+        <p>我的字体颜色是红色</p>
+    </div>
+</body>
+</html>

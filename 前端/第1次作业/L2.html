@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L2</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+        }
+        #frame{
+            width: 435px;
+            height: 660px;
+        }
+        #Small_box{
+            text-align: center;
+            background-color: darkgray;
+            color: white;
+            position: relative;
+            left: 90px;
+            top:-40px;
+            border-radius: 5px;
+            height: 34px;
+            width: 160px;
+            line-height: 34px;
+            font-size: 18px;
+        }
+        #Small_box:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 8px solid;
+            border-right-color: darkgray;
+            top: 4%;
+            right: 100%;
+            margin-left: -15px;
+        }
+        #back{
+            position: relative;
+            left: 332px;
+            top: -24px;
+            height: 30px;
+        }
+        table{
+            position: relative;
+            top:100px;
+            left: 60px;
+            border: solid 1px darkgray;
+            border-collapse: collapse;
+            border-radius: 5px;
+            line-height: 30px;
+        }
+        td{
+            border: 1px solid darkgray;
+            height: 40px;
+        }
+        #log_In{
+            position: relative;
+            top: 110px;
+            left: 60px;
+            font-size: 14px;
+
+        }
+        #icon{
+            position: relative;
+            top:170px;
+            left: 60px;
+            width: 300px;
+            height: 30px;
+        }
+        .icu{
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+        }
+        #end{
+            position: relative;
+            top:190px;
+            left:60px;
+            font-size: 14px;
+            color: darkgray;
+        }
+        #end a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="frame">
+        <img src="img/1CQ_code.jpg" style="width: 60px;position: relative;top:10px;left:10px">
+        <img src="img/cha.jpg" id="back">
+        <img src="img/logo.jpg"style="position: relative;top:120px;left: 65px;height: 80px">
+        <div id="Small_box">扫码登陆更安全</div>
+        <table >
+            <tr>
+                <td>
+                    <img src="img/phone.jpg"style="width: 20px;position: relative;top: 5px">
+                    <select style="border: none;position: relative;top: -3px">
+                        <option name="phoneNumber" value="86" selected="selected" >+86 </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" placeholder="请在这里输入手机号" style="border: 0px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="img/suo.jpg" style="height: 20px">
+                    <input type="text" placeholder="请输入密码" style="border: 0px">
+                </td>
+            </tr>
+        </table>
+        <div id="log_In">
+            <img src="img/gou.jpg" style="width: 20px;position: relative;top:3px">自动登录
+            <a href="https://reg.163.com/naq/findPassword?pd=music&pkid=KGxdbOk#/verifyAccount" style="position: relative;left: 100px;color: dodgerblue;text-decoration: none" target="_blank">忘记密码</a>
+            <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=100495085&response_type=code&redirect_uri=https://music.163.com/back/" target="_blank" style="position: relative;left: 110px;color: dodgerblue;text-decoration: none">验证码登录</a>
+            <span style="position: relative;left: 19px;font-style: initial">|</span>
+            <div style="width: 300px;height: 45px;line-height: 45px;background-color: red;border-radius: 10px;color: white;font-size: 24px;position: relative;top: 40px;text-align: center">
+                    登陆
+            </div>
+            <div style="width: 300px;height: 45px;line-height: 45px;font-size: 20px;position: relative;top: 40px;text-align: center;text-decoration: underline">注册</div>
+        </div>
+        <div id="icon">
+            <img class="icu"src="img/tt.jpg"style="position: relative;left: 0px">
+            <img class="icu"src="img/yy.jpg"style="position: relative;left: 50px">
+            <img class="icu"src="img/weixin.jpg"style="position: relative;left: 100px">
+            <img class="icu"src="img/qq.jpg"style="position: relative;left: 150px">
+        </div>
+        <div id="end">
+            <input type="checkbox">同意
+            <a href="https://st.music.163.com/official-terms/service" target="_blank">《服务条款》</a>
+            <a href="https://st.music.163.com/official-terms/privacy" target="_blank">《隐私政策》</a>
+            <a href="https://st.music.163.com/official-terms/children" target="_blank">《儿童隐私政策》</a>
+        </div>
+    </div>
+</body>
+</html>
