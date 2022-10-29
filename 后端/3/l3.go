@@ -7,14 +7,14 @@ import (
 )
 
 func main() {
-	fp, err := os.Create("plan.txt")
+	fp, err := os.Create("3/plan.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
 	content := "I’m not afraid of difficulties and insist on learning programming"
 	fp.Write([]byte(content))
 	fp.Close()
-	file, _ := os.Open("plan.txt")
+	file, _ := os.Open("3/plan.txt")
 	var chunk []byte
 	buf := make([]byte, 1024)
 	for {
