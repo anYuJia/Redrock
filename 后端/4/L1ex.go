@@ -35,7 +35,7 @@ func ReleaseSkill1(skillNames string, releaseSkillFunc func(string)) {
 }
 func Release(skillName map[string]string) {
 	var i int
-	m := rand.Intn(len(skillName))
+	m := Ran(len(skillName))
 	for key, value := range skillName {
 		if m == i {
 			ReleaseSkill1(key, func(skillName string) {
@@ -64,4 +64,24 @@ func InitSkill(skillName map[string]string) {
 	skillName["坤坤之球"] = "大家好，我是练习时长两年半的个人练习生"
 	skillName["坤之rap"] = "你食不食油饼"
 	skillName["爱kun撒娇"] = "哎哟！！！你干嘛！！"
+}
+func random2(n int) int {
+	c := make(chan int)
+	go func() {
+		defer close(c)
+		select {
+		case c <- rand.Intn(n):
+		case c <- rand.Intn(n - 1):
+		case c <- rand.Intn(n - 2):
+		case c <- rand.Intn(n - 3):
+		}
+	}()
+	return <-c
+}
+func Ran(n int) int {
+	var numRandom [10]int
+	for i := 0; i < 10; i++ {
+		numRandom[i] = random2(n)
+	}
+	return numRandom[rand.Intn(10)]
 }
