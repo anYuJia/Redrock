@@ -1,0 +1,14 @@
+[Unit]
+Description=bilibiliTool timer service
+ 
+[Service]
+ExecStart=systemctl start bilibiliTool.service
+
+[Timer]
+OnUnitActiveSec=24h
+OnBootSec=2m
+Unit=bilibiliTool.timer
+ 
+[Install]
+WantedBy=multi-user.target
+

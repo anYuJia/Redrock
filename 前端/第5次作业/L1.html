@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span{
+        background-color:black ;
+    }
+</style>
+<body>
+<p>谁把谁的灵魂 装进谁的身体</p>
+<p> 谁把谁的身体 变成囹圄囚禁自己</p>
+<p> 乱世总是最 不缺耳语</p>
+<p> 哪种美丽会 唤来妒忌</p>
+<p> 你并没有罪 <span>有罪是这世界</span></p>
+<p> 生而为人无罪</p>
+<p> 你不需要抱歉</p>
+<p>One day I will be you, baby boy and you gon' be me</p>
+<p> 喧哗如果不停</p>
+<p> 喧哗如果不停</p>
+<p> 让我陪你安静</p>
+<p> I wish I could hug you , till you're really really being free</p>
+<p> 哪朵玫瑰 没有荆棘</p>
+<p> 最好的报复 是美丽</p>
+<p> 最美的盛开 是反击</p>
+<p> 别让谁去 改变了你</p>
+<p> 你是你 或是妳 都行</p>
+<p> 会有人 全心的 爱你</p>
+<p> 试着想像 you switched to his body</p>
+<p> Sexuality 当心 什么会伤你</p>
+<p> 多少次的重伤 多少次的冷语</p>
+<p> Drowning 谁会拉你</p>
+<p> Dreaming 谁会陪你</p>
+<p> Same <span>shit</span> happens every day .</p>
+<p> 你离开后 世界可改变</p>
+<p> <span>多少无知罪愆</span> 事过不境迁</p>
+<p> 永志不忘记念 往事不如烟</p>
+<p> 生而为人无罪</p>
+<p> 你不需要抱歉</p>
+<p> One day I will be you, baby boy and you gon' be me</p>
+<p> 喧哗如果不停</p>
+<p> 让我陪你安静</p>
+<p> I wish I could hug you , till you're really really being free</p>
+<p> 哪朵玫瑰 没有荆棘</p>
+<p> 最好的<span>报复</span> 是美丽</p>
+<p> 最美的盛开 是反击</p>
+<p> 别让谁去 改变了你</p>
+<p> 你是你 或是妳 都行</p>
+<p> 会有人 全心的 爱你</p>
+<p> 玫瑰少年 在我心里</p>
+<p> 绽放著 鲜艳的 传奇</p>
+<p> 我们都 从来没 忘记</p>
+<p> 你的控诉 没有声音</p>
+<p> 却倾诉 更多的 真理</p>
+<p> 却唤醒 无数的 真心</p>
+<button>显示</button>
+<script>
+    var display = false
+    button = document.querySelector('button')
+    button.onclick = function (){
+        let span = document.querySelectorAll('span');
+        if(display==false){
+            for(i=0;i<span.length;i++)
+            {
+                span[i].style.background = "white"
+            }
+            button.innerHTML = "隐藏"
+            display = true
+        }
+        else{
+            for(i=0;i<span.length;i++)
+            {
+                span[i].style.background = "black"
+            }
+            button.innerHTML = "显示"
+            display = false
+        }
+    }
+</script>
+</body>

@@ -1,0 +1,13 @@
+[Unit]     				
+Description=httpd
+After=network.target    
+
+[Service]				
+Type=forking			#定义启动类型
+ExecStart=/root/bilibiliTool/bilibiliTool/Ray.BiliBiliTool.Console  start 	#定义启动进程时执行的命令。
+ExecReload=/root/bilibiliTool/bilibiliTool/Ray.BiliBiliTool.Console restart  #重启服务时执行的命令
+ExecStop=/root/bilibiliTool/bilibiliTool/Ray.BiliBiliTool.Console stop		#定义关闭进程时执行的命令。
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
