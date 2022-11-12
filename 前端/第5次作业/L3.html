@@ -119,7 +119,9 @@
         function remove(e){
             x = e.target;
             parent = x.parentNode;
-            parent.style.display = "none";
+            parent.parentNode.removeChild(parent)
+            flag--;
+            //parent.style.display = "none";
         }
     </script>
 </head>
