@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>L1</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #total{
+      height: 480px;
+      width: 350px;
+      background-color: white;
+      border-radius: 10px;
+      transition: all 0.5s;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1)
+    }
+    .x{
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+  <script>
+    window.onload = ()=>{
+      fu()
+    }
+    function fu(){
+      const x = document.querySelectorAll('.x')
+      let step = (i) => {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            x[i].style.transform = "translateX(240px)";
+            x[i].style.transition = "transform 1.5s";
+            resolve("ok")
+          }, 1500);
+        });
+      };
+      async function demo() {
+            await step(0);
+            await step(1);
+            await step(2);
+      }
+      demo()
+    }
+
+  </script>
+</head>
+<body>
+<div id="total">
+  <div class="x" style="background: deepskyblue"></div>
+  <div class="x" style="background: yellow"></div>
+  <div class="x" style="background: chartreuse"></div>
+</div>
+</body>
+</html>

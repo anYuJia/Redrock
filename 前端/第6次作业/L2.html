@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L1</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #total{
+            height: 480px;
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.5s;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1)
+        }
+    </style>
+    <script>
+        window.onload = ()=>{
+            fu()
+        }
+        function fu(){
+            string = "元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。"
+            slice = string.slice("")   //字符串变为切片
+            text = document.querySelector("#text")  //获取位置
+            const insert = (slice,x)=>{                  //外面用函数传参和递归
+                new Promise((resolve,reject)=> {         //要递归，要promise 不知道怎么传参数
+                    setTimeout(() => {                   //
+                        if (x >= slice.length) {
+                            reject()
+                        } else {
+                            let obt = document.createTextNode(slice[x]);
+                            text.append(obt);
+                            resolve()
+                            return insert(slice, x + 1)
+                        }
+                    }, 100)
+                })
+            }
+            insert(slice,0)
+        }
+    </script>
+</head>
+<body>
+<div id="total">
+    <div style="text-align: center;font-size: 30px;font-style:oblique">《记承天寺夜游》</div>
+    <div id = "text" style="font-size: 20px"></div>
+
+</div>
+</body>
+</html>
