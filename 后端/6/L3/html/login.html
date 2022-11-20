@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>L2</title>
+  <style>
+    html,body{
+      height: 100%;
+      font-family: fangsong;
+      background: url("yuxi/6/L3/img/a.jpg");
+    }
+    html body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #box{
+      height: 480px;
+      width: 350px;
+      background: ;
+      text-align: center;
+      border-radius: 10px;
+      transition: all 0.5s;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1)
+
+    }
+    #box:hover{
+      transform: scale(1.02);
+      transition-duration:0.5s;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4)
+    }
+    #box img{
+      height:auto;
+      width: 100%;
+      border-radius: 10px;
+      transition: all 0.5s;
+    }
+    #box img:hover{
+      transform: scale(1.08);
+      transition-duration:0.5s;
+      background-size: cover;
+    }
+    #box p{
+      color: darkgray;
+      font-size: 16px;
+    }
+    #box input{
+      width: 330px;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      border-radius: 20px;
+      border: bisque 2px solid;
+    }
+    button{
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 20px;
+      border: 0;
+      border-radius: 15px;
+      background: deepskyblue;
+      color: white;
+    }
+    #box div button:hover{
+      background: blue;
+    }
+  </style>
+</head>
+<body>
+<div id="box">
+  <img src="yuxi/6/L3/img/d.jpg">
+  <h3 style="font-size: 30px">请登录</h3>
+  <form action="/login" method="post">
+    <input type="text" name="Username"><br>
+    <button type="submit">登录</button>
+  </form>
+</div>
+</body>
+</html>

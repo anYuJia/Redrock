@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L3</title>
+    <style>
+        html{
+            background-image: url("yuxi/6/L3/img/a.jpg");
+            background-attachment:fixed;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        body{
+            position: relative;
+            top:200px;
+        }
+        #name{
+            color: blueviolet;
+            font-size:60px;
+            font-family: '楷体';
+        }
+        #kk{
+            position:relative;
+            top: 50px;
+            left: 50px;
+        }
+        #kk input{
+            border-radius: 30px;
+            height: 30px;
+            font-size: 30px;
+            background-color:transparent;
+        }
+        button,select,option{
+            border: 0ch;
+            height: 30px;
+            color: rgb(187, 50, 146);
+            font-size: 30px;
+            background-color:transparent;
+        }
+        #box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #messageBoard{
+            height: 300px;
+            width: 800px;
+            font-size: 28px;
+            text-align: left;
+            font-family: '隶书';
+            color: hotpink;
+        }
+        #messageBoard button{
+            position: relative;
+            left: 60px;
+            background-color: transparent;
+            border-radius: 20px;
+            height: 20px;
+            font-size: 20px;
+        }
+        #messageBoard button:hover{
+            background-color: rgb(203, 219, 114);
+            color: darkviolet;
+        }
+    </style>
+    <script>
+        var flag = 0
+        window.onload = ()=>{
+            arr = eval({{.c}})
+            for(var i = 0;i<arr.length;i++){
+                ly(arr[i])
+            }
+        }
+        function ly(arr)
+        {
+                var tt= arr.username
+                var obt=document.createTextNode(tt+"："+arr.context);
+                var oli=document.createElement("div");
+                oli.appendChild(obt);
+                oli.addEventListener('mouseover', rm, true);
+                oli.addEventListener('mouseleave', rmf, true);
+                obj =document.getElementById('col')
+                oli.style.color = "skyblue";
+                document.getElementById("messageBoard").appendChild(oli);
+        }
+        function rm(e){
+            if(!flag){
+                const li = e.target
+                obt=document.createTextNode("删除")
+                obtTag =document.createElement("button")
+                obtTag.appendChild(obt)
+                obtTag.addEventListener('click',remove, false);
+                li.appendChild(obtTag)
+                flag++;
+            }
+        }
+        function rmf(e){
+            const liv = e.target
+            let child = liv.lastElementChild;
+            while (child) {
+                liv.removeChild(child);
+                child = liv.lastElementChild;
+                obj =document.getElementById('col')
+
+                flag--;
+            }
+        }
+        function remove(e){
+            x = e.target;
+            parent = x.parentNode;
+            parent.parentNode.removeChild(parent)
+            flag--;
+        }
+    </script>
+</head>
+<body>
+<div id="name">
+    留言板
+</div>
+<div id="kk">
+    <form action="/liuyan", method="post">
+        <input id="n" name="Username">
+        <input id="inputText" type="text" name="Context">
+        <button type="submit">发送留言</button>
+    </form>
+</div>
+<div id="box">
+    <div id="messageBoard">
+        <br><br>
+    </div>
+</div>
+</body>
+</html>
