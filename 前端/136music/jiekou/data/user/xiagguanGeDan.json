@@ -1,0 +1,50 @@
+{
+    "code": 200,
+    "playlists": [
+        {
+            "creator": {
+                "userId": "262333822",
+                "nickname": "愿明天过得更好"
+            },
+            "coverImgUrl": "http://p1.music.126.net/r3sRZhIJ9ZTvpQh0UPJa2A==/109951163391595233.jpg",
+            "name": "电影里的经典对白遇上后摇",
+            "id": "443350541"
+        },
+        {
+            "creator": {
+                "userId": "366640984",
+                "nickname": "勒溪"
+            },
+            "coverImgUrl": "http://p1.music.126.net/NVhz1mFzAlGHm76OEp60Xg==/109951165994990551.jpg",
+            "name": "网易云最好听宝藏歌曲推荐（更新快）",
+            "id": "6766661664"
+        },
+        {
+            "creator": {
+                "userId": "31379262",
+                "nickname": "海岛度假Santori..."
+            },
+            "coverImgUrl": "http://p1.music.126.net/4OAstxbpJdwvxnDBBFjcyw==/18707090836647990.jpg",
+            "name": "「欧美清新电子」让人无法抗拒的美妙旋律",
+            "id": "551902217"
+        },
+        {
+            "creator": {
+                "userId": "284887870",
+                "nickname": "银河"
+            },
+            "coverImgUrl": "http://p1.music.126.net/btd8GhsD9VTCoEESkO3elA==/109951163507248478.jpg",
+            "name": "喜欢用说唱怎么说",
+            "id": "945185470"
+        },
+        {
+            "creator": {
+                "userId": "2445590",
+                "nickname": "下一颗巧克力"
+            },
+            "coverImgUrl": "http://p1.music.126.net/edYwvhCmV9rOInIGkBqKAQ==/2946691188914673.jpg",
+            "name": "电影配乐中的古典乐章｜正声雅音",
+            "id": "413889091"
+        }
+    ]
+}

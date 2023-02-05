@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="but">生成二维码</button>
+    <img id="img" src="">
+    <div id="status"></div>
+    <div id="cookie"></div>
+</body>
+<script>
+    var qrstatus;
+    document.querySelector('#but').onclick=function(){
+        let url="http://ananqiexiafan.icu:3000/login/qr/key";
+        fetch(url,{
+            method:"post",
+        }).then(response => response.json())
+        .then(data => getq(data));
+    }
+    const getq = function(data){
+        let url = "http://ananqiexiafan.icu:3000/login/qr/create";
+        fetch(url+`?key=${data.data.unikey}&qrimg=1`)
+        .then(res => res.json())
+        .then(json => document.querySelector('#img').setAttribute( 'src',json.data.qrimg));
+        qrstatus = setInterval(function(data){
+            let url2 = "http://ananqiexiafan.icu:3000/login/qr/check"
+            fetch(url2+`?key=${data.data.unikey}`)
+            .then(res => res.json())
+            .then(json => check(json));
+        },500,data);
+    }
+    const check = function(data){
+        if(data.code == "801"){
+            document.querySelector('#status').innerHTML = data.message;
+        }
+        if(data.code == "802"){
+            document.querySelector('#status').innerHTML = data.message;
+        }
+        if(data.code == "803"){
+            document.querySelector('#status').innerHTML = data.message;
+            document.querySelector('#cookie').innerHTML = data.cookie;
+            clearInterval(qrstatus);
+            var cookie = data.cookie;
+        }
+    }
+</script>
+</html>

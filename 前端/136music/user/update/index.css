@@ -1,0 +1,364 @@
+.top-top{
+    height: 9vh;
+    background-color: RGB(32,32,35);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+input{
+    outline: none;
+    color: whitesmoke;
+}
+textarea{
+    outline: none;
+    resize: none;
+    color: whitesmoke;
+}
+.top-top-title{
+    position: relative;
+    left: 4vw;
+    font-size: 30px;
+}
+.top-top-ff{
+
+}
+.top-top-fl{
+    position: relative;
+    left: -14vw;
+    top: 25px;
+}
+.top-top-fr{
+    position: relative;
+    left: -12vw;
+    top: 25px;
+
+}
+.top-top-in{
+    background-color: RGB(41,41,44);
+    height: 3vh;
+    width: 10vw;
+    border-radius: 13px;
+    position: relative;
+    left: -5vw;
+    align-items: center;
+}
+.top-top-in button,input{
+    background: transparent;
+    border: 0;
+}
+.top-top-in button{
+    position: relative;
+    top: 0.2vw;
+    left: -0.4vw;
+}
+.top-top-in input{
+    position: relative;
+    top: -2.3vh;
+    left: 2.8vw;
+}
+.top-top-in input:focus{
+    outline: none;
+    color: aliceblue;
+}
+.top-top-button{
+    background: transparent;
+    position: relative;
+    left: 4.65vw;
+    top: -2.7vh;
+    border: 0;
+}
+.top-right{
+    width: 30.0vw;
+    justify-content: space-around;
+}
+.top-right img{
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 20px;
+}
+.top-right span svg{
+    position: relative;
+    padding: 10px;
+}
+.top-top-line{
+    width: 100vw;
+    height: 3px;
+    position: fixed;
+    background-color: red;
+    top: 80px;
+}
+
+.left{
+    height: 78vh;
+    width: 12vw;
+    background-color: RGB(43,43,43);
+    position: fixed;
+    top: 8.9vh;
+    left: 0;
+    color: RGB(214,214,214);
+    padding: 15px;
+    z-index: 10;
+}
+.left-title{
+    font-size: 26px;
+    font-weight: bolder;
+    padding: 9px;
+    background-color: RGB(51,51,51);
+    border-radius: 4px;
+}
+.left-find-music{
+    font-size: 20px;
+}
+.left-find-music div{
+    padding: 8px;
+}
+.left-2title{
+    font-size: 14px;
+    color: RGB(124,124,124);
+    padding: 10px;
+}
+.my-music{
+    font-size: 17px;
+}
+.my-music div{
+    padding: 7px;
+}
+.my-music div svg{
+    position: relative;
+    top: 0.3vh;
+}
+.left-2title{
+    justify-content: space-between;
+}
+.left-2title-two{
+    position: relative;
+    left: 2vw;
+    top: 0.5vh;
+}
+.left-my-love{
+    padding: 6px;
+    color: whitesmoke;
+}
+#myPlaylist a{
+    text-decoration: none;
+}
+.left-my-love svg{
+    position: relative;
+    top: 4px;
+}
+.left-my-love-div{
+    position: relative;
+    left: 9vw;
+    top: -2.2vh;
+    border: 2px solid RGB(49,49,49);
+    width: 44px;
+    height: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+.left-my-love-div svg{
+    position: relative;
+    left: -7px;
+    top: -1px;
+}
+#mylove{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.cross-line{
+    width: 0.5px;
+    background-color: RGB(200,200,200);
+    height: 82vh;
+    position:relative;
+    left: 12vw;
+    top: -67vh;
+}
+.button{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background-color: RGB(34,34,37);
+    bottom: 0;
+    left: 0;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.button-left{
+    padding-left: 30px;
+}
+.button-left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    position: relative;
+    top: 1.2vw;
+}
+.button-song-name{
+    position: relative;
+    top: -4.5vh;
+    left: 4.4vw;
+    font-size: large;
+    font-weight: bold;
+}
+.button-singer{
+    position: relative;
+    left: 4.4vw;
+    top: -3.5vh;
+    font-size: small;
+}
+.button-center{
+    position: relative;
+    top: -8.0vh;
+    left: 48vw;
+}
+.button-center svg{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.button-center-button{
+    position: relative;
+    top: 0.8vh;
+}
+.time-line-totle{
+    width: 23vw;
+    background-color: aliceblue;
+    position: relative;
+    left: -5vw;
+    height: 3px;
+    border-radius: 1.5px;
+}
+.time-line-now{
+    width: 20vw;
+    background-color: brown;
+    height: 3px;
+    left: -1px;
+    border-radius: 1.5px;
+}
+.button-center-start-time{
+    position: relative;
+    left: -8vw;
+    top: 1vh;
+}
+.button-center-end-time{
+    position: relative;
+    left: 19vw;
+    top: -1.4vh;
+}
+.button-right{
+    position: relative;
+    top: -13vh;
+    left: 75vw;
+}
+.button-right span,svg{
+    padding-left: 20px;
+}
+.button-right span{
+    border: 1px red solid;
+    border-radius: 2px;
+    background: transparent;
+    color: brown;
+    font-weight: bold;
+    padding: 2px;
+}
+.center{
+    background-color: RGB(43,43,43);
+    width: 86.5vw;
+    min-height: 88vh;
+    position: relative;
+    top: 8vh;
+    left: 13vw;
+    padding: 20px;
+    color: RGB(200,200,200);
+}
+.center-title{
+    padding-top: 50px;
+    padding-left: 40px;
+    color: RGB(200,200,200);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.center-Nickname{
+    padding: 10px;
+}
+.center-nickname{
+    background-color:RGB(56,56,56);
+    height: 20px;
+    border-radius: 5px;
+}
+.center-info{
+    background-color: RGB(56,56,56);
+    border: 0ch;
+    width: 300px;
+    height: 100px;
+    border-radius: 7px;
+    
+}
+.center-Info{
+    line-height: 100px;
+}
+.center-sex{
+    padding-bottom: 20px;
+}
+.center-sex input{
+    background: transparent;
+}
+.center-birthday{
+    padding-bottom: 20px;
+}
+.center-birthday select{
+    color: RGB(214,214,214);
+    background-color: RGB(56,56,56);
+    border: 0ch;
+    border-radius: 7px;
+}
+.center-end button{
+    width: 70px;
+    height: 32px;
+    font-size: large;
+    color: RGB(200,200,200);
+    border-radius: 16px;
+}
+.center-end{
+    padding-left: 40px;
+}
+.save-info{
+    border: 0ch;
+    background-color: rgb(236,65,65);
+}
+.cancer-info{
+    background: transparent;
+    border: 1px solid RGB(200,200,200);
+}
+.change-Tx{
+    position: relative;
+    left: 40vw;
+    top: -40vh;
+}
+.change-Tx img{
+    height: 240px;
+    border-radius: 10px;
+}
+#change-tx{
+    height: 30px;
+    width: 100px;
+    border: 1px solid RGB(200,200,200);
+
+    position: relative;
+    left: 80px;
+    top: 10px;
+    border-radius: 14px;
+    line-height: 30px;
+    text-align: center;
+}

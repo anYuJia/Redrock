@@ -1,0 +1,434 @@
+.top-top{
+    height: 9vh;
+    background-color: RGB(32,32,35);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.top-top-title{
+    position: relative;
+    left: 4vw;
+    font-size: 30px;
+}
+.top-top-ff{
+
+}
+.top-top-fl{
+    position: relative;
+    left: -14vw;
+    top: 25px;
+}
+.top-top-fr{
+    position: relative;
+    left: -12vw;
+    top: 25px;
+
+}
+.top-top-in{
+    background-color: RGB(41,41,44);
+    height: 3vh;
+    width: 10vw;
+    border-radius: 13px;
+    position: relative;
+    left: -5vw;
+    align-items: center;
+}
+.top-top-in button,input{
+    background: transparent;
+    border: 0;
+}
+.top-top-in button{
+    position: relative;
+    top: 0.2vw;
+    left: -0.4vw;
+}
+.top-top-in input{
+    position: relative;
+    top: -2.3vh;
+    left: 2.8vw;
+}
+.top-top-in input:focus{
+    outline: none;
+    color: aliceblue;
+}
+.top-top-button{
+    background: transparent;
+    position: relative;
+    left: 4.65vw;
+    top: -2.7vh;
+    border: 0;
+}
+.top-right{
+    width: 30.0vw;
+    justify-content: space-around;
+}
+.top-right img{
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 20px;
+}
+.top-right span svg{
+    position: relative;
+    padding: 10px;
+}
+.top-top-line{
+    width: 100vw;
+    height: 3px;
+    position: fixed;
+    background-color: red;
+    top: 80px;
+}
+
+.left{
+    height: 78vh;
+    width: 12vw;
+    background-color: RGB(43,43,43);
+    position: fixed;
+    top: 8.9vh;
+    left: 0;
+    color: RGB(214,214,214);
+    padding: 15px;
+    z-index: 10;
+}
+.left-title{
+    font-size: 26px;
+    font-weight: bolder;
+    padding: 9px;
+    background-color: RGB(51,51,51);
+    border-radius: 4px;
+}
+.left-find-music{
+    font-size: 20px;
+}
+.left-find-music div{
+    padding: 8px;
+}
+.left-2title{
+    font-size: 14px;
+    color: RGB(124,124,124);
+    padding: 10px;
+}
+.my-music{
+    font-size: 17px;
+}
+.my-music div{
+    padding: 7px;
+}
+.my-music div svg{
+    position: relative;
+    top: 0.3vh;
+}
+.left-2title{
+    justify-content: space-between;
+}
+.left-2title-two{
+    position: relative;
+    left: 2vw;
+    top: 0.5vh;
+}
+.left-my-love{
+    padding: 6px;
+    color: whitesmoke;
+}
+#myPlaylist a{
+    text-decoration: none;
+}
+.left-my-love svg{
+    position: relative;
+    top: 4px;
+}
+.left-my-love-div{
+    position: relative;
+    left: 9vw;
+    top: -2.2vh;
+    border: 2px solid RGB(49,49,49);
+    width: 44px;
+    height: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+.left-my-love-div svg{
+    position: relative;
+    left: -7px;
+    top: -1px;
+}
+#mylove{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.cross-line{
+    width: 0.5px;
+    background-color: RGB(200,200,200);
+    height: 82vh;
+    position:relative;
+    left: 12vw;
+    top: -67vh;
+}
+.button{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background-color: RGB(34,34,37);
+    bottom: 0;
+    left: 0;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.button-left{
+    padding-left: 30px;
+}
+.button-left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    position: relative;
+    top: 1.2vw;
+}
+.button-song-name{
+    position: relative;
+    top: -4.5vh;
+    left: 4.4vw;
+    font-size: large;
+    font-weight: bold;
+}
+.button-singer{
+    position: relative;
+    left: 4.4vw;
+    top: -3.5vh;
+    font-size: small;
+}
+.button-center{
+    position: relative;
+    top: -8.0vh;
+    left: 48vw;
+}
+.button-center svg{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.button-center-button{
+    position: relative;
+    top: 0.8vh;
+}
+.time-line-totle{
+    width: 23vw;
+    background-color: aliceblue;
+    position: relative;
+    left: -5vw;
+    height: 3px;
+    border-radius: 1.5px;
+}
+.time-line-now{
+    width: 20vw;
+    background-color: brown;
+    height: 3px;
+    left: -1px;
+    border-radius: 1.5px;
+}
+.button-center-start-time{
+    position: relative;
+    left: -8vw;
+    top: 1vh;
+}
+.button-center-end-time{
+    position: relative;
+    left: 19vw;
+    top: -1.4vh;
+}
+.button-right{
+    position: relative;
+    top: -13vh;
+    left: 75vw;
+}
+.button-right span,svg{
+    padding-left: 20px;
+}
+.button-right span{
+    border: 1px red solid;
+    border-radius: 2px;
+    background: transparent;
+    color: brown;
+    font-weight: bold;
+    padding: 2px;
+}
+.center{
+    background-color: RGB(43,43,43);
+    width: 98.5vw;
+    min-height: 88vh;
+    height: 160vh;
+}
+#lunbo {
+    width: 800px;
+    height: 288px;
+    margin: 30px auto;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+#fu {
+    width: 49vw;
+    height: 29.8vh;
+    overflow: hidden;
+}
+#zi {
+    width: 400vw;
+    height: 29.8vh;
+}
+#zi img {
+    margin-right:-8px;
+    width: 50vw;
+    height: 29.8vh;
+    display: inline-block;
+    border-radius: 10px;
+}
+#bod {
+    position: absolute;
+    left: 20.8vw;
+    top: 30vh;
+    list-style: none;
+    overflow: hidden;
+}
+#bod li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid black;
+    opacity: 0.3;
+    background-color: #ccc;
+    margin-left: 5px;
+}
+#left-button,
+#right-button {
+    top: -64vh;
+    position: relative;
+    width: 40px;
+    height: 60px;
+    opacity: 0.5;
+    background: transparent;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    border: 0;
+}
+#left-button {
+    left: -1vw;
+}
+#right-button {
+    left: 46vw;
+}
+.recommend-title{
+    font-size: larger;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-top: 20px;
+}
+.recommend-body{
+    display: inline-block;
+    position: relative;
+    top: 1vh;
+    width: 50vw;
+}
+.recommend-bodyly{
+    height: 22vh;
+    width: 8vw;
+    float: left;
+    padding-left: 50px;
+    padding-right: 45px;
+}
+.recommend-bodyly img{
+    height: 15vh;
+    width: 8vw;
+    border-radius: 7px;
+}
+.p{
+    position: relative;
+    top: -18vh;
+    left: 2vw;
+    font-size: small;
+    color: whitesmoke;
+}
+.t{
+    font-size: small;
+    color:whitesmoke;
+}
+.O{
+    color: RGB(43,43,43);
+}
+.rank-list{
+    position: relative;
+    left: 31.25vw;
+    top: 50vh;
+    width: 50vw;
+    height: 60vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.rank-list-biaoshen{
+    float: left;
+    position: relative;
+    width: 25vw;
+    height: 30vh;
+    left: -2.5vw;
+}
+.rank-list-xinge{
+    float: left;
+    position: relative;
+    width: 25vw;
+    height: 30vh;
+    left: 8.5vw;
+}
+.rank-list-yuanchuang{
+    float: left;
+    position: relative;
+    width: 25vw;
+    height: 30vh;
+    left: -2.5vw;
+    top: 5vh;
+}
+.rank-list-rege{
+    float: left;
+    position: relative;
+    width: 25vw;
+    height: 30vh;
+    left: 16.25vh;
+    top: 5vh;
+}
+.rank-list-title{
+    font-size: large;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+.rank-list-body{
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 28px;
+
+}
+.rank-list-body-x{
+    color: darkgray;
+    font-weight: 900;
+}
+.rank-list-body-name{
+    font-size: small;
+    color: darkgray;
+}
